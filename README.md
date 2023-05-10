@@ -3,7 +3,7 @@ Author: William Cerny, on behalf of the DELVE Collaboration
 (code authored in part by many individuals)
 
 
-# Overview of Contents: 
+## Overview of Contents: 
 
 1. /result_files/: Probabilistic Membership Catalog and MCMC Chains from \texttt{ugali}
 3. /code/: Codes used to extract quantitative results from MCMC chain and generate figures 
@@ -12,6 +12,6 @@ Author: William Cerny, on behalf of the DELVE Collaboration
 6. /raw_all/: Raw outputs from $\texttt{ugali}$; most likely can be ignored
 
 
-# Other Software: 
+## Other Software: 
 The results from this work are primarily derived from two open-source software packages: \texttt{simple} and \texttt{ugali}. 
 
