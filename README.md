@@ -5,7 +5,7 @@ Author: William Cerny, on behalf of the DELVE Collaboration
 
 ## Overview of Contents: 
 
-1. /result_files/: Probabilistic Membership Catalog and MCMC Chains from $\texttt{ugali}$
+1. /result_files/: Probabilistic membership catalog and MCMC chains from $\texttt{ugali}$
 3. /code/: Codes used to extract quantitative results from MCMC chain and generate figures 
 4. /figures/: .pdf versions of figures from manuscript
 5. /catalogs/: Selected catalog data from DELVE DR2 used for characterization analysis
