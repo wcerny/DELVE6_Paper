@@ -1,6 +1,7 @@
 # Code and Data for DELVE 6 Discovery Paper
 Author: William Cerny, on behalf of the DELVE Collaboration
 (code authored in part by many individuals)
+Last updated: May 14, 2023
 
 
 ## Overview of Contents: 
