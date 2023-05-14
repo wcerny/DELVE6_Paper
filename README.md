@@ -15,7 +15,7 @@ Author: William Cerny, on behalf of the DELVE Collaboration
 ## Dependencies and Other Software: 
 The results from this work are primarily derived from two open-source software packages: $\texttt{simple}$ and $\texttt{ugali}$. 
 
-Other dependencies of the code repository include, but are not limited to: $\texttt{astropy}$, $\texttt{numpy}$, $\texttt{scipy}$
+Other dependencies of the code repository include, but are not limited to: $\texttt{astropy}$, $\texttt{numpy}$, $\texttt{scipy}$, $\texttt{ChainConsumer}$
 
 
 
