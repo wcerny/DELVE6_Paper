@@ -21,4 +21,4 @@ Other dependencies of the code repository include, but are not limited to: $\tex
 
 
 ## Authorship Disclaimer: 
-WRC makes no claim of authorship and/or originality to the codes presented herein. Codes presented here include contributions from many authors, both within and outside of the DELVE Collaboration. This code is provided exclusively for purposes of reproducing the results/figures presented in the manuscript.
+WRC makes no claim of authorship and/or originality to the codes presented herein. Codes presented here include contributions from many authors, both within and outside of the DELVE Collaboration. This repository and its code is provided exclusively for the purpose of reproducing the results/figures presented in the manuscript.
