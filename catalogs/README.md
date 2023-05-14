@@ -14,6 +14,6 @@ RA  = Right Ascension (in degrees)
 
 DEC = Declination (in degrees)
 
-WAVG_EXT_CORRECTED_G = Extinction-corrected PSF magnitude in the g-band, from a conditions-weighted average across exposures (in mag)
+WAVG_EXT_CORRECTED_G = Extinction-corrected, g-band PSF magnitude, from a conditions-weighted average across exposures (in mag)
 
-WAVG_EXT_CORRECTED_R = Extinction-corrected PSF magnitude in the r-band, from a conditions-weighted average across exposures (in mag)
+WAVG_EXT_CORRECTED_R = Extinction-corrected, r-band PSF magnitude, from a conditions-weighted average across exposures (in mag)
