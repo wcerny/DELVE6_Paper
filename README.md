@@ -11,7 +11,7 @@ Last updated: May 14, 2023
 3. /code/: Codes used to extract quantitative results from MCMC chain and generate figures 
 4. /figures/: files for the figures in the manuscript (.pdf or .png format)
 5. /catalogs/: Selected catalog data from DELVE DR2 used for characterization analysis
-6. /raw_all/: Raw files from $\texttt{ugali}$ and $\texttt{simple}$; most users can ignore
+6. /raw_all/: Miscellaneous files from $\texttt{ugali}$ and $\texttt{simple}$; most users can ignore
 
 
 ## Dependencies and Other Software: 
