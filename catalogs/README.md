@@ -8,7 +8,12 @@ Users interested in the dataset with all columns included are encouraged to dire
 
 ## Column Schema: 
 
+QUICK_OBJECT_ID = Internal DELVE ID for a given source
+
 RA  = Right Ascension (in degrees)
 
 DEC = Declination (in degrees)
 
+WAVG_EXT_CORRECTED_G = Extinction-corrected PSF magnitude in the g-band, from a conditions-weighted average across exposures (in mag)
+
+WAVG_EXT_CORRECTED_R = Extinction-corrected PSF magnitude in the r-band, from a conditions-weighted average across exposures (in mag)
