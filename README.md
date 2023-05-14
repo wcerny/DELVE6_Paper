@@ -1,7 +1,5 @@
 # Code and Data for DELVE 6 Discovery Paper
-Repository author: William Cerny, on behalf of the DELVE Collaboration
-(code authored in part by many individuals)
-
+Repository owner: William Cerny (william.cerny@yale.edu), on behalf of the DELVE Collaboration (https://delve-survey.github.io/)
 Last updated: May 14, 2023
 
 
@@ -21,3 +19,5 @@ Other dependencies of the code repository include, but are not limited to: $\tex
 
 
 
+## Disclaimer: 
+WRC makes claims are made to the originality of the codes presented herein.
