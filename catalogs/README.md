@@ -6,8 +6,9 @@ Note that these files have only a very limited selections of columnsl, namely th
 Users interested in the dataset with all columns included are encouraged to directly access the data through NOIRLab's Astro Data Lab (https://datalab.noirlab.edu/delve/)
 
 
-## Schema: 
+## Column Schema: 
 
 RA  = Right Ascension (in degrees)
+
 DEC = Declination (in degrees)
 
