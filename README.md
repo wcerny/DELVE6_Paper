@@ -12,6 +12,8 @@ Author: William Cerny, on behalf of the DELVE Collaboration
 6. /raw_all/: Raw outputs from $\texttt{ugali}$; most users can ignore
 
 
-## Other Software: 
+## Dependencies and Other Software: 
 The results from this work are primarily derived from two open-source software packages: $\texttt{simple}$ and $\texttt{ugali}$. 
+
+
 
