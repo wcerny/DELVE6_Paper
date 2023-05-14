@@ -9,7 +9,7 @@ Author: William Cerny, on behalf of the DELVE Collaboration
 3. /code/: Codes used to extract quantitative results from MCMC chain and generate figures 
 4. /figures/: .pdf versions of figures
 5. /catalogs/: Selected catalog data from DELVE DR2 used for characterization analysis
-6. /raw_all/: Raw outputs from $\texttt{ugali}$; most users can ignore
+6. /raw_all/: Raw files from $\texttt{ugali}$ and $\texttt{simple}$; most users can ignore
 
 
 ## Dependencies and Other Software: 
