@@ -62,4 +62,4 @@ a3.set_ylim(-2.193, -1.0)
 a4.set_ylim(-2.193, -1.0)
 
 # save 
-fig.savefig('AMR_May.pdf',bbox_inches = 'tight')
+fig.savefig('Fig3a_AgeMetallicity.pdf',bbox_inches = 'tight')
