@@ -12,6 +12,10 @@ Last updated: May 14, 2023
 5. /catalogs/: Selected catalog data from DELVE DR2 used for characterization analysis
 6. /raw_all/: Miscellaneous files from $\texttt{ugali}$ and $\texttt{simple}$; most users can ignore
 
+## Setup Instructions
+
+To be able to re-generate the figures and results from the paper, you will need to download the MCMC chains 
+
 
 ## Dependencies and Other Software: 
 The results from this work are primarily based on results derived from the use of two open-source software packages: $\texttt{simple}$ and $\texttt{ugali}$. Here, we generally provide only the outputs of these software packages, and refer the reader to these packages' respective repositories for information on their use.
