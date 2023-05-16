@@ -16,7 +16,7 @@ Last updated: May 14, 2023
 ## Dependencies and Other Software: 
 The results from this work are primarily based on results derived from the use of two open-source software packages: $\texttt{simple}$ and $\texttt{ugali}$. Here, we generally provide only the outputs of these software packages, and refer the reader to these packages' respective repositories for information on their use.
 
-Other dependencies of the code repository include, but are not limited to: $\texttt{astropy}$, $\texttt{numpy}$, $\texttt{scipy}$, $\texttt{ChainConsumer}$, $\texttt{healpy}$, , $\texttt{matplotlib}$, and more.
+Other dependencies of the code repository include, but are not limited to: $\texttt{astropy}$, $\texttt{numpy}$, $\texttt{scipy}$, $\texttt{ChainConsumer}$, $\texttt{healpy}$,  $\texttt{matplotlib}$, and more.
 
 
 
