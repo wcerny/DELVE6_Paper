@@ -11,10 +11,11 @@ Last updated: May 30, 2023
 4. /figures/: files for the figures in the manuscript (.pdf or .png format)
 5. /catalogs/: Selected catalog data from DELVE DR2 used for characterization analysis
 6. /raw_all/: Miscellaneous files from $\texttt{ugali}$ and $\texttt{simple}$; most users can ignore
+7. environment.yml: conda environment file 
 
 ## Setup Instructions
 
-To be able to re-generate the figures and results from the paper, you will need to download the MCMC chains 
+To be able to re-generate the figures and results from the paper, you will need to (1) download dependencies via the provided conda environment file, and (2) download the MCMC chains. 
 
 
 ## Dependencies and Other Software: 
