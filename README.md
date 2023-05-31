@@ -15,7 +15,7 @@ Last updated: May 30, 2023
 
 ## Setup Instructions
 
-To be able to re-generate the figures and results from the paper, you will need to (1) download dependencies via the provided conda environment file, and (2) download the MCMC chains. 
+To be able to re-generate the figures and results from the paper, you will need to (1) download and activate the provided conda (Python) environment file, (2) download the MCMC chains,
 
 
 ## Dependencies and Other Software: 
