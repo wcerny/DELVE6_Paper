@@ -15,7 +15,7 @@ Last updated: May 30, 2023
 
 ## Setup Instructions
 
-To be able to re-generate the figures and results from the paper, you will need to (1) download and activate the provided conda (Python) environment file, (2) download the MCMC chains,
+To be able to re-generate the figures and results from the paper, you will need to (1) download and activate the provided conda (Python) environment file, (2) download the MCMC chains, (3) move the provided isochrone files to the directory ugali is expecting.
 
 
 ## Dependencies and Other Software: 
