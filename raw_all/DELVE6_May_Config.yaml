@@ -1,0 +1,158 @@
+# This is a ugali configuration file written in YAML format
+# (http://yaml.org/). It can be interpreted with pyyaml
+# (http://pyyaml.org/) and is parsed into a python dictionary.
+# Variables can be defined with '&' and referenced with '*'. Within
+# the ugali context, this file can be read with
+# >>> from ugali.utils.config import Config
+# >>> config = Config('config.yaml')
+
+### ### ### ### ### ### ### ### ### ### 
+### Options for building analysis   ### 
+### ### ### ### ### ### ### ### ### ### 
+
+bands: ['g','r']
+coords:
+  coordsys        : &coordsys cel # Coordinate system ['CEL','GAL']
+  nside_catalog   : 32     # Size of patches for catalog binning
+  nside_mask      : 64     # Size of patches for mask creation
+  nside_likelihood: 256    # Size of target pixel
+  nside_pixel     : 1024    # Size of pixels within target region
+  roi_radius      : 1.5   # Outer radius of background annulus
+  roi_radius_annulus: 0.5  # Inner radius of background annulus
+  roi_radius_interior: 0.5 # Radius of interior region for likelihood analysis
+  proj_type: ait
+  
+catalog:
+  dirname: cat
+  basename: "cat_hpx_%05i.fits"
+  lon_field: RA
+  lat_field: DEC
+  # Color defined as mag_1 - mag_2
+  objid_field       : QUICK_OBJECT_ID
+  mag_1_band        : &band1 g
+  mag_1_field       : WAVG_EXT_CORRECTED_G 
+  mag_err_1_field   : WAVG_MAGERR_PSF_G
+  mag_2_band        : &band2 r
+  mag_2_field       : WAVG_EXT_CORRECTED_R #
+  mag_err_2_field   : WAVG_MAGERR_PSF_R
+  # True = band 1 is detection band; False = band 2 is detection band
+  band_1_detection  : &detection True
+  mc_source_id_field: MC_SOURCE_ID
+  selection         : "(self.data['EXTENDED_CLASS_G'] <= 2) & (self.data['EXTENDED_CLASS_G'] >= 0)"
+
+data: 
+  script : ./ugali/preprocess/database.py
+  survey : &survey des
+  release: y2q1
+  dirname: ./cat
+  footprint: footprint1024.fits.gz
+  density: ./density/density_hpx%04i.fits  
+
+mask:
+  dirname    : ./split_23.8
+  basename_1 : "maglim_g_hpx%04i.fits"
+  basename_2 : "maglim_r_hpx%04i.fits"
+  minimum_solid_angle: 0.1 # deg^2
+  fracmin    : 0.4
+
+maglim:
+  dirname    : ./maglim 
+  filename_1 : maglim_g1024.fits.gz 
+  filename_2 : maglim_r1024.fits.gz 
+
+#ADW: Depricated in favor of 'binning'
+color:
+  min   : &cmin -0.5
+  max   : &cmax 1.6
+  n_bins: &cbins 25
+ 
+mag:
+  min   : &mmin  16    # 18
+  max   : &mmax  23.8  # 25
+  n_bins: &mbins 100 # 0.1, 0.02
+
+# DEPRECATED?: ADW 2017-09-22
+binning: 
+  color  : [ *cmin, *cmax, *cbins]
+  mag    : [ *mmin, *mmax, *mbins] 
+  age    : [     1,  13.5, 125] # Age (Gyr)   [max a=13.5]
+  z      : [0.0001,  0.01,  32] # Metallicity [max z=0.07]
+ 
+# Default kernel specification
+kernel: &kernel
+  name: RadialPlummer
+  r_h: 0.07
+  proj: 'ait'
+
+isochrone: &isochrone
+   name: CompositeIsochrone
+   isochrones:
+     - {name: Bressan2012, age: 10.0, z: 0.0001}
+     - {name: Bressan2012, age: 10.0, z: 0.0002}
+     - {name: Bressan2012, age: 12.0, z: 0.0001}
+     - {name: Bressan2012, age: 12.0, z: 0.0002}
+   weights: [0.25,0.25,0.25,0.25]
+   distance_modulus : 17.0
+   band_1 : *band1
+   band_2 : *band2
+   AU Nameband_1_detection : *detection
+   survey: *survey
+
+source: &source
+  isochrone: *isochrone
+  kernel:    *kernel
+
+likelihood:
+  delta_mag: 0.01 # 1.e-3 
+
+### ### ### ### ### ### ### ### ### ### 
+### Options for analysis components ###
+### ### ### ### ### ### ### ### ### ### 
+
+output:
+  likedir    : ./scan
+  searchdir  : ./search
+  mcmcdir    : ./DELVE6_May
+  simdir     : ./sims
+  resultdir  : ./results
+  plotdir    : ./plots
+  likefile   : "scan_%08i_%s.fits"
+  mergefile  :  merged_scan.fits
+  roifile    :  merged_roi.fits
+  labelfile  :  merged_labels.fits
+  objectfile :  ugali_objects.fits
+  assocfile  :  ugali_assocs.fits
+  candfile   :  ugali_candidates.fits
+  mcmcfile   : "%s_mcmc.npy"
+  simfile    : "sims_%04i.fits"
+
+batch: &batch
+  cluster: slac
+  jobname: ugali
+  local: {}
+  kipac-ibq : &kipac-ibq {"W":"8:00", "R":"rusage[mem=16G]","M":"16G"}
+  short     : &short  {"W":"1:00", "n":2, "R":"span[hosts=1]"}
+  medium    : &medium {"W":"4:00", "n":4, "R":"span[hosts=1]"}
+  opts      : *medium  # needs to be medium now
+  max_jobs  : 300
+  chunk     : 25
+  
+scan:
+   script : ./ugali/analysis/scan.py
+   distance_modulus_array: [16.0, 16.5, 17.0, 17.5, 18.0, 18.5, 19.0, 19.5, 20.0, 20.5, 21.0, 21.5, 22.0, 22.5, 23.0]
+   extension_array: [0.03,0.1,0.3]
+
+mcmc:
+  script : ./ugali/analysis/mcmc.py
+  srcmdl: 'srcmdl.yaml'
+  nsamples: 22500
+  nwalkers: 80
+  nthreads: 18
+  nburn   : 12500
+  nchunk  : 500
+  batch   : *batch
+
+results:
+  martin  : True
+  nburn   : 0
+  alpha   : 0.32
