@@ -11,8 +11,9 @@ Last updated: June 2, 2023
 4. /figures/: files for the figures in the manuscript (.pdf or .png format)
 5. /catalogs/: Selected catalog data from DELVE DR2 used for characterization analysis
 6. /raw_all/: Miscellaneous files from $\texttt{ugali}$ and $\texttt{simple}$; most users can ignore
-7. environment.yml: conda environment file 
-8. Properties.tex: LaTeX file used to construct Table 1.
+7. /isochrones/: Isochrone files needed to reproduce figures (see setup instructions)
+8. environment.yml: conda environment file 
+9. Properties.tex: LaTeX file used to construct Table 1.
 
 *Interested in only the member catalog? Look for the "delve6_may_mcmc.fits" file in /raw_all/.* 
 
