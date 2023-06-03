@@ -18,7 +18,7 @@ Last updated: June 2, 2023
 
 *Interested in only the member catalog? Look for the "delve6_may_mcmc.fits" file in /raw_all/.* 
 
-## Setup Instructions
+## Setup 
 To be able to re-generate the figures and results from the paper, you will need to (1) download and activate the provided conda (Python) environment file, (2) download the MCMC chains, (3) move the provided isochrone files to the directory ugali is expecting. All the steps necessary to carry out these tasks are described in the file "instructions.md".
 
 ## Dependencies and Other Software: 
