@@ -1,7 +1,7 @@
 # Code and Data for DELVE 6 Discovery Paper
 Repository maintained by William Cerny (william.cerny@yale.edu), on behalf of the DELVE Collaboration (https://delve-survey.github.io/)
 
-Last updated: May 30, 2023
+Last updated: June 2, 2023
 
 
 ## Overview of Contents: 
@@ -12,6 +12,8 @@ Last updated: May 30, 2023
 5. /catalogs/: Selected catalog data from DELVE DR2 used for characterization analysis
 6. /raw_all/: Miscellaneous files from $\texttt{ugali}$ and $\texttt{simple}$; most users can ignore
 7. environment.yml: conda environment file 
+
+*Interested in only the member catalog?* Look for the "delve6_may_mcmc.fits' file in /raw_all/. 
 
 ## Setup Instructions
 
