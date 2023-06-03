@@ -6,12 +6,13 @@ Last updated: June 2, 2023
 
 ## Overview of Contents: 
 
-1. /result_files/: Probabilistic membership catalog and MCMC chains from $\texttt{ugali}$
+1. instructions.md: Detailed, step-by-step instructions to reproduce tables and figures
+2. /result_files/: Probabilistic membership catalog and MCMC chains from $\texttt{ugali}$
 3. /code/: Codes used to extract quantitative results from MCMC chain and generate figures 
-4. /figures/: files for the figures in the manuscript (.pdf or .png format)
+4. /figures/: Files for the figures in the manuscript (.pdf or .png format)
 5. /catalogs/: Selected catalog data from DELVE DR2 used for characterization analysis
 6. /raw_all/: Miscellaneous files from $\texttt{ugali}$ and $\texttt{simple}$, needed for codes
-7. /isochrones/: Isochrone files needed to reproduce figures (see setup instructions)
+7. /isochrones/: Isochrone files needed to reproduce figures 
 8. environment.yml: conda environment file 
 9. Properties.tex: LaTeX file used to construct Table 1.
 
@@ -19,7 +20,8 @@ Last updated: June 2, 2023
 
 ## Setup Instructions
 
-To be able to re-generate the figures and results from the paper, you will need to (1) download and activate the provided conda (Python) environment file, (2) download the MCMC chains, (3) move the provided isochrone files to the directory ugali is expecting.
+To be able to re-generate the figures and results from the paper, you will need to (1) download and activate the provided conda (Python) environment file, (2) download the MCMC chains, (3) move the provided isochrone files to the directory ugali is expecting. 
+
 
 
 ## Dependencies and Other Software: 
