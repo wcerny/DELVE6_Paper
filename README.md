@@ -13,7 +13,7 @@ Last updated: June 2, 2023
 6. /raw_all/: Miscellaneous files from $\texttt{ugali}$ and $\texttt{simple}$; most users can ignore
 7. environment.yml: conda environment file 
 
-*Interested in only the member catalog?* Look for the "delve6_may_mcmc.fits' file in /raw_all/. 
+*Interested in only the member catalog? Look for the "delve6_may_mcmc.fits' file in /raw_all/.* 
 
 ## Setup Instructions
 
