@@ -1,0 +1,32 @@
+\begin{deluxetable}{l c c}
+\tablewidth{0pt}
+\tabletypesize{\footnotesize}
+\tablecaption{\label{tab:d6properties} Properties of DELVE~6}
+\tablehead{\colhead{Parameter} & \colhead{Value} & \colhead{Units}}
+\startdata
+IAU Name & DELVE J0212$-$6603 & ... \\
+Constellation & Hydrus & ...\\
+\ra & $33.070^{+0.003}_{-0.004}$ & deg \\
+\dec & $-66.056^{+0.002}_{-0.002}$ & deg\\
+$r_\text{h}$ & $0.43^{+0.18}_{-0.12}$ & arcmin  \\
+$r_{1/2}$ & $10^{+4}_{-3}$ & pc  \\
+\ellip & $< 0.56$ & ... \\
+\PA & $14^{+40}_{-63}$ & deg \\
+$M_V$\tablenotemark{a} & $-1.5^{+0.4}_{-0.6}$ & mag \\
+\age & $> 9.8$ & Gyr \\
+\feh & $< -1.17$ & dex \\
+$(m-M)_0$ & $19.51^{+0.04}_{-0.12} \rm \ (stat.) \ \pm 0.1\tablenotemark{b}$ (sys.) & mag\\
+$D_{\odot}$ & $80^{+2}_{-4} \rm \ (stat.) \  ^{+4}_{-4} (sys.)$ & kpc\\
+$D_{\rm GC}$ & $78^{+2}_{-4} \rm \ (stat.) \  ^{+4}_{-4} (sys.)$ & kpc\\
+$D_{\rm LMC}$ & $35^{+2}_{-3} \rm \ (stat.) \ ^{+3}_{-3} (sys.)$ & kpc\\
+$D_{\rm SMC}$ & $20^{+2}_{-3} \rm \ (stat.) \  ^{+3}_{-3} (sys.)$ & kpc\\
+$E(B-V)$\tablenotemark{c} & 0.036 & mag \\
+\hline
+$\mu_{\alpha} \cos \delta$ & $0.93^{+0.39}_{-0.39}$ & mas yr$^{-1}$ \\
+$\mu_{\delta}$ & $-1.28^{+0.38}_{-0.38}$ & mas yr$^{-1}$ \\
+\enddata
+\tablecomments{Uncertainties for each parameter were derived from the highest-density interval containing 68\% of the marginalized posterior distribution. For the ellipticity, metallicity, and age, the posterior distribution peaked at the boundary of the allowed parameter space. Therefore, we quote the upper, upper, and lower bound for these three parameters (respectively) at 95\% confidence.}
+\tablenotetext{a}{Our estimate of $M_V$ was derived following the procedure from \citet{Martin:2008} and does not include uncertainty in the distance.}
+\tablenotetext{b}{The statistical uncertainty is derived from our \ugali MCMC. We include a systematic uncertainty of $\pm0.1$ associated with isochrone modeling following \citet{2015ApJ...813..109D}. This systematic error is not included in the uncertainty on $r_{1/2}$.}
+\tablenotetext{c}{This $E(B-V)$ value refers to the mean reddening of all sources within $r_{1/2}$, as determined via the maps of \cite{Schlegel:1998} with the recalibration from \citet{2011ApJ...737..103S}}
+\end{deluxetable}
