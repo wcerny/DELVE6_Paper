@@ -1,6 +1,6 @@
 ## Instructions for Reproducing Table 1 and All Figures [Under Construction]
 
-### Part A: Setting up the Conda Environment
+### Part A: Setting up the conda environment
 A1. Git clone this entire repository.
 
 A2. Migrate to the repository directory using the terminal, and use the command: conda env create -f environment.yml
@@ -17,6 +17,10 @@ B2. Make a directory called ".ugali"
 
 B3. Use the command "ln -s [path to isochrone folder that is part of this repository] ." 
   
-### Part C: Setting up isochrone files
+### Part C: Re-assembling the MCMC chains
 
+Github has a maximum file size for upload, which unfortunately prohibits the storage of the MCMC chains associated with our paper in the repository.
+
+
+### Part D: Running the analysis codes
 
