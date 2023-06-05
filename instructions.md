@@ -15,7 +15,7 @@ B1. Change directory to your home directory (cd ~)
 
 B2. Make a directory called ".ugali"
 
-B3. Use the command "ln -s <path to isochrone folder that is part of this repository> ." 
+B3. Use the command "ln -s [path to isochrone folder that is part of this repository] ." 
   
 ### Part C: Setting up isochrone files
 
